@@ -7,10 +7,13 @@ import prog1Tools.IOTools;
 
 public class BestBikeComponents {
 	public static void main(String[] args) {
-		Component[] components = new Component[20]; // array with 20 elements (index 0-19).
-
-		// initializes the component array with component objects.
-		for (int i = 0; i < components.length; i++) {
+		Component[] components = new Component[20]; // array with 20 elements (index 0-19)
+		
+		Component materialComponent = new Component(1, "Frame", "20211111", 20, "Best Frames Ever", "good deal", 1);
+		components[0] = materialComponent;
+		
+		// initializes the other elements of the component array with component objects
+		for (int i = 1; i < components.length; i++) {
 			components[i] = new Component(i);
 		}
 

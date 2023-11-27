@@ -11,9 +11,32 @@ public class Component {
 	int stockAmount;
 	String vendor;
 	String comment;
+	int componentMaterial;
+
+	// Constants for materials
+	private static final int CARBON = 1;
+	private static final int ALU = 2;
+	private static final int COMPOSITE = 3;
+	private static final int STEEL = 4;
+
+
+
+	//component_ID, name, delivery_date, stock_amout, vendor and comment as parameters
 
 	public Component(int componentID) {
 		this.componentID = componentID;
+	}
+
+	public Component() {}
+
+	public Component(int componentID, String name, String deliveryDate, int stockAmount, String vendor, String comment, int componentMaterial) {
+		this.componentID = componentID;
+		this.name = name;
+		this.deliveryDate = deliveryDate;
+		this.stockAmount = stockAmount;
+		this.vendor = vendor;
+		this.comment = comment;	
+		this.componentMaterial = componentMaterial;
 	}
 
 	public void printComponent() {
@@ -23,6 +46,7 @@ public class Component {
 		System.out.println("Stock Amount: " + stockAmount);
 		System.out.println("Vendor: " + vendor);
 		System.out.println("Comment: " + comment);
+		System.out.println("Material: " + getMaterialString(componentMaterial));
 	}
 
 	public static void writeComponent(Component[] components) {
@@ -46,10 +70,27 @@ public class Component {
 			System.out.print("Comment: ");
 			component.comment = IOTools.readString();
 
+			System.out.print("Material: ");
+			component.componentMaterial = IOTools.readInt();
+
 			System.out.println("Component information entered successfully.");
 		} else {
 			System.out.println(String.format("Invalid Component ID. Please enter a valid ID (1 - %d).",components.length));
 		}
 	}
 
+	private String getMaterialString(int componentMaterial) {
+		switch (componentMaterial) {
+		case CARBON:
+			return "Carbon";
+		case ALU:
+			return "Aluminum";
+		case COMPOSITE:
+			return "Composite";
+		case STEEL:
+			return "Steel";
+		default:
+			return "Unknown Material";
+		}
+	}
 }
