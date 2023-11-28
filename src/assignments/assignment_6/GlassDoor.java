@@ -2,10 +2,10 @@ package assignments.assignment_6;
 
 public class GlassDoor extends Door {
 	// used private final because the doorType of GlassDoor should always be Glass 
-	private final String doorType = "Glass";
+	private final String DOOR_TYPE = "Glass";
 
 	@Override
 	public String getDoorType() {
-		return doorType;	
+		return DOOR_TYPE;	
 	}
 }
