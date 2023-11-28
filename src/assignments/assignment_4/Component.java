@@ -14,11 +14,10 @@ public class Component {
 	int componentMaterial;
 
 	// Constants for materials
-	private static final int CARBON = 1;
-	private static final int ALU = 2;
-	private static final int COMPOSITE = 3;
-	private static final int STEEL = 4;
-
+	public static final int CARBON = 1;
+	public static final int ALU = 2;
+	public static final int COMPOSITE = 3;
+	public static final int STEEL = 4;
 
 
 	//component_ID, name, delivery_date, stock_amout, vendor and comment as parameters

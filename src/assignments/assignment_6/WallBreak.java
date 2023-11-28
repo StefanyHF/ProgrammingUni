@@ -7,7 +7,6 @@ public class WallBreak extends WallOpening {
 	private String wallBreakFormat = "";
 
 	// It formats the width to have two digits after the decimal point using
-
 	@Override
 	public double getWidth() {
 		double width = super.getWidth();

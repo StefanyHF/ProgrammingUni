@@ -1,14 +1,13 @@
 package assignments.assignment_6;
 
-public class GlassWindow extends Window{
+public class GlassWindow extends Window {
 
-	// used private final because the material of GlassWindow should always be Glass
-	private final String MATERIAL = "Glass";
+	// used private final because the type of GlassWindow should always be Glass
+	private final String TYPE = "Glass";
 
-
-	// return Glass as the Window material
+	// return Glass as the Window type
 	@Override
-	public String getWindowMaterial() {
-		return MATERIAL;
+	public String getWindowType() {
+		return TYPE;
 	}
 }

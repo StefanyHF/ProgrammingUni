@@ -1,24 +1,14 @@
 package assignments.assignment_6;
 
-import java.text.DecimalFormat;
 
-public class BullEye extends WallOpening{
+public class BullEye extends Window {
 
-	// It formats the width to have one digit after the decimal point using
+	// used private final because the type of BullEye window should always be Bull's Eye
+	private final String TYPE = "Bull's Eye";
 
+	// return Bull's Eye as the Window type
 	@Override
-	public double getWidth() {
-		double width = super.getWidth();
-
-		//DecimalFormat object with one digit after decimal point
-		DecimalFormat decimalFormat = new DecimalFormat("#.#");
-
-		// Format the double value using the DecimalFormat
-		String formattedValue = decimalFormat.format(width);
-
-		// Convert the formatted string back to a double
-		double formattedDoubleValue = Double.parseDouble(formattedValue);
-
-		return formattedDoubleValue;
+	public String getWindowType() {
+		return TYPE;
 	}
 }
