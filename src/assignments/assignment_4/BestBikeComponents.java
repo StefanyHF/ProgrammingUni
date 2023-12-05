@@ -3,7 +3,7 @@ package assignments.assignment_4;
 import assignments.assignment_5.BestBikeManagement;
 import prog1Tools.IOTools;
 
-// Assignment 4.2 and 5.4
+// Assignments 4.2/ 5.4 / 6.4
 
 public class BestBikeComponents {
 	public static void main(String[] args) {
