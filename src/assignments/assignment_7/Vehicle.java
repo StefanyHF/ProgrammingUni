@@ -17,7 +17,7 @@ abstract class Vehicle {
 		this.driving = false;
 		this.drivingFast = false;
 	}
-	
+
 	public Vehicle() {}
 
 	public void accelerate(double percentage) {
@@ -34,7 +34,7 @@ abstract class Vehicle {
 		return "Instruments currently show:\n" + name
 				+ (driving ? (drivingFast ? " driving really fast" : " driving") : " stopped") + " with "
 				+ engineType.getHorsePower() + " hp" + "\nwith fuel level at " + engineType.getFuelLevel() + " liters"
-				+ "\nwith " + tiresNumber + " tires" + "\nwith pressure at " + tireType.getPressure() + " bar";
+				+ "\nwith " + tiresNumber + " tires" + "\nwith pressure at " + tireType.getPressure() + " bar";			
 	}
 
 	public void refillEngine(double maxFuel) {

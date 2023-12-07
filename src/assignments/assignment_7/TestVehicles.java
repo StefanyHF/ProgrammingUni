@@ -61,6 +61,5 @@ public class TestVehicles {
 		System.out.println(bmw.bordComputer());
 		System.out.println(honda.bordComputer());
 		System.out.println(ford.bordComputer());
-
 	}
 }

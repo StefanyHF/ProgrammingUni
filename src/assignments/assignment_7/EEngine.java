@@ -7,10 +7,9 @@ public class EEngine extends Engine {
 		super(fuelLevel, power, maxEnergy);
 		this.maxEnergy = maxEnergy;
 	}
-	
+
 	@Override
 	public double getMax() {
 		return maxEnergy;
 	}
-
 }

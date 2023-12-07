@@ -8,14 +8,12 @@ public class Engine {
 	private double fuelLevel;
 	private double power;
 	private double maxFuelLevel;
-	//private double maxEnergy;
-
 
 	public Engine(double fuelLevel, double power) {
 		this.fuelLevel = fuelLevel;
 		this.power = power;
 	}
-	
+
 	public Engine(double fuelLevel, double power, double maxFuelLevel) {
 		this.fuelLevel = fuelLevel;
 		this.power = power;
