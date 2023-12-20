@@ -13,10 +13,12 @@ public class PrintLetters {
 
 
 		int indexCounter = 0; // this keeps track of the current position in the letters array
+		
+		int lenght = 8; 
 
 
-		for(int i = 0; i < 8; i++) {  // rows loop
-			for(int j = 0; j < 8; j++) { // columns loop
+		for(int i = 0; i < lenght; i++) {  // rows loop
+			for(int j = 0; j < lenght; j++) { // columns loop
 				System.out.print(letters[indexCounter + j] + "  ");	
 			}
 			System.out.println(); // move to the next row
