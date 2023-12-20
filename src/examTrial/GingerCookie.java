@@ -2,11 +2,11 @@ package examTrial;
 public class GingerCookie extends Cookie {
 	
 	public GingerCookie() {
-		this.setTopping("");
+		this.setTopping("Sugar");
 	}
 	
 	@Override
 	public void setTopping(String topping) {
-		super.setTopping("Sugar");
+		super.setTopping(topping);
 	}	
 }
